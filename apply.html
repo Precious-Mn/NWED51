@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form - Golden Heart Donation Organisation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #b8860b;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 40px auto;
+            background: #ffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #b8860b;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 12px;
+            background: #b8860b;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #b8860b;
+        }
+
+        .privacy {
+            margin-top: 15px;
+            font-size: 12px;
+            color: gray;
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Golden Heart Donation Organisation</h1>
+    <p style="text-align:center;">Apply for Assistance</p>
+
+    <form action="Community-confirmation.html" method="GET" onsubmit="settimeout(() => { this.reset(); }, 100);" autocomplete="off">
+
+        <!-- Personal Info -->
+        <label>Full Names And Surname</label>
+        <input type="text" required>
+
+        <label>ID Number</label>
+        <input type="text" required pattern="[0-9]{13}" maxlength="13" title="please enter a valid 13 digit south african ID number">
+
+        <label>Phone Number</label>
+        <input type="tel" required pattern="[0-9]{10}" title="please enter 10 digit phone number">
+
+        <!-- Dropdown -->
+        <label>Applicant Type</label>
+        <select required>
+            <option value="">-- Select --</option>
+            <option>Student</option>
+            <option>Community Member</option>
+        </select>
+
+        <!-- Location -->
+        <label>Location</label>
+        <input type="text" placeholder="Must be in Kimberley" required>
+
+        <!-- Upload -->
+        <label>Upload ID / Student Card</label>
+        <input type="file" required>
+
+        <!-- Assistance Type -->
+        <label>Type of Assistance Needed</label>
+        <select required>
+            <option value="">-- Select --</option>
+            <option>Food Parcel & Study Material</option>
+            <option>Clothing</option>
+            <option>Sanitary Pack</option>
+        </select>
+
+        <!-- Declaration -->
+        <label>Describe Your Situation (Confidential)</label>
+        <textarea placeholder="Explain your circumstances..." required></textarea>
+
+        <!-- Submit -->
+        <button type="submit">Submit Application</button>
+        <button type="reset">Clear Form</button>
+
+        <!-- Privacy -->
+        <p class="privacy">
+            Your information is strictly confidential and will never be shared without your consent.
+        </p>
+
+    </form>
+</div>
+
+</body>
+</html>

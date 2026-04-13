@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Golden Hearts Organisation</title>
+  <style>
+    * { margin: 0; 
+       padding: 0; 
+       box-sizing: border-box; }
+    body { 
+       font-family: Arial,sans-serif; 
+       background: #b8860b; 
+       color: white}
+
+    header {
+      background: #b8860b;
+      color: #d49017; 
+      text-align: center;
+      padding: 50px; 
+    }
+
+    nav { 
+      background:#d49017;
+      display: flex;
+      justify-content: center;
+      gap: 40px; 
+      padding: 16px;
+    }
+       
+    nav a {
+       color: white; 
+       text-decoration: none; 
+       font-weight: lighter; 
+    }
+
+    nav a:hover {
+       text-decoration: none; 
+    }
+
+    .section { 
+      max-width: 950px; 
+      margin: 50px auto; 
+      background: white;
+      padding: 35px; 
+      border-left: 8px solid #b8860b; 
+      border-radius: 9px; 
+    }
+    .section h2 { 
+      color: #b8860b; 
+      margin-bottom: 10px; 
+    }
+
+    .section p  { 
+      line-height: 1.7; 
+      color: #444; 
+    }
+
+    input, textarea { 
+      width: 100%; 
+      padding: 8px; 
+      margin: 6px 0 12px;
+      border: 1px solid #ccc; 
+      border-radius: 4px; 
+      font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    }
+
+    button { 
+      background:white; 
+      color: white; 
+      padding: 10px 24px;
+      border: none; 
+      border-radius: 4px; 
+      cursor: pointer; 
+      font-size: 14px; 
+    }
+
+    button:hover { 
+      background: #b8860b; 
+    }
+
+    #msg { 
+      margin-top: 10px; 
+      color: white; 
+      font-weight: lighter; 
+    }
+
+
+    .stories-wrapper {
+      max-width: 750px;
+      margin: 0 auto 40px;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .stories-wrapper h2 { 
+      color: white; 
+      margin-bottom: 20px; 
+      font-size: 1.9rem; 
+    }
+
+    .story-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .story-card {
+      background: white;
+      border-top: 5px solid #d49017;
+      border-radius: 8px;
+      padding: 20px;
+      flex: 1 1 220px;
+      max-width: 260px;
+      text-align: center;
+    }
+
+    .story-card .avatar {
+      width: 60px; height: 40px;
+      border-radius: 50%;
+      background: #b8860b;
+      color: white;
+      font-size: 1.4rem;
+      font-weight: lighter;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px;
+    }
+
+    .story-card h3   { 
+      color: #d49017; 
+      margin-bottom: 6px; 
+      font-size: 1rem; 
+    }
+
+    .story-card .loc { 
+      color: black; 
+      font-size: 0.8rem; 
+      margin-bottom: 10px; 
+    }
+
+    .story-card p  { 
+      color: #555; 
+      font-size: 0.88rem; 
+      line-height: 1.6; 
+    }
+
+    footer { 
+      background: #b8860b; 
+      color: white; 
+      text-align: center; 
+      padding: 15px; 
+    }
+
+  </style>
+</head>
+<body>
+ 
+  <header>
+    <h1 style="color: white;">The Golden Heart Donation Organisation</h1>
+    <p style="color: white;">Golden by heart, golden by nature.</p>
+  </header>
+
+  <nav>
+    <a href="#contact us">Contact Us</a>
+    <a href="#about us">About Us</a>
+    <a href="#mission">Mission</a>
+    <a href="#testimonials">Testimonials</a>
+  </nav>
+
+  <div class="section" id="about us">
+    <h2>About Us</h2>
+    <p style="color: black; font-family: Verdana, Geneva, Tahoma, sans-serif;">Golden Heart Donation Organisation came about from difficult times that had to be brought to an end. As founders of the Golden Hearts Organisation took a walk in the streets of Kimberley, it was clear that the residents of Kimberley needed some help. This was evident as children attended schools in torn uniforms. These were individuals who did not have the ability to attend school due to the lack of food. It was clear that Kimberley residents were facing difficult times financially and thereby lacking the ability to take care of themselves. The Kimberley residents had been suffering in silence for long enough and it was time to make things right.</p>
+  </div>
+
+  <div class="section" id="mission">
+    <h2 style="color:#b8860b; font-family: Verdana, Geneva, Tahoma, sans-serif;">Our Mission</h2>
+    <p style="color:black; font-family: Verdana, Geneva, Tahoma, sans-serif;">This whole thing revolves around the idea of dignity. The most important thing for us is our dignity. There is a famous African phrase that says, "Umuntu Ngumuntu Ngabantu."This phrase conveys the idea of being part of a community and having a sense of belonging. This means that we want our community member to feel at home and rest assured that all of their basic requirements will be fulfilled because they need to be healthy in order to make plans for the future."</p>
+  </div>
+
+  <div class="stories-wrapper" id="testimonials">
+    <h2>Testimonials</h2>
+
+    <div class="story-cards">
+
+      <div class="story-card">
+        <div class="avatar">S</div>
+        <h3>Single mother of 3</h3>
+        <p class="loc">Galeshewe, Kimberley</p>
+        <p style="color:black; font-family: Verdana, Geneva, Tahoma, sans-serif;">"One of the times that hunger and scarcity of food occurred in our house was when myself and my kids had nothing to eat. The look on their faces could tell that they were really hungry and the sad part was that there was nothing I could do to help them as I did not have any job at that time. Each day, I would wake up and head into town to look for someone who can help me out. Some days were lucky and some were not because you encounter people of all types in the town. I used to pray each day, and I never lost hope. One day my prayers were answered when GHO came into my life."</p>
+      </div>
+
+      <div class="story-card">
+        <div class="avatar">S</div>
+        <h3>Sol Plaajie Student</h3>
+        <p class="loc">West End, Kimberley</p>
+        <p style="color: black; font-family: Verdana, Geneva, Tahoma, sans-serif;">"It was embarrassing to admit that I could not afford my study materials. As I was completing my assignment at the library, I came across a post online about a certain organisation that helped people from disadvantaged backgroungs. I then, decided to look up this organisation and as I went through the comments, people were praising these people and so I decided to get in touch with them. Luckily for me, I got a positive response from them and they really pulled through for me. I would like to thank a certain individual in this organization who made sure to provide me with all that I required. I completed my semester because of them."</p>
+      </div>
+
+      <div class="story-card">
+        <div class="avatar">A</div>
+        <h3>Anonymous</h3>
+        <p class="loc">Kimberley</p>
+        <p style="color: black; font-family: Verdana, Geneva, Tahoma, sans-serif;">"It is not only the food packages they provided us with that stood out, it was how they spent time sitting down and listening to us about all the issues we have faced. Our cries have been falling on deaf ears for way too long and no one in the local government took their time to listen to us. I would like to thank every team member of the Golden Hearts Organisation who made it possible for us to not sleep on empty stomachs and providing us with the essential needs. Syabonga GHO."</p>
+      </div>
+  </div>
+
+  <div class="section" id="contact us">
+    <h2 style="color: #b8860b;">Contact Us</h2>
+    <p style="color: #b8860b;">Email:help@donations.org</p>
+    <p style="color: #b8860b;">Phone:064 991 7205</p>
+    <p style="color: #b8860b;">Address:57 Green Street,Kimberley,Northern Cape</p>
+  </div>
+
+  <footer>
+    <p>Copyright 2026 Golden Heart Donation Organization.All Rights Reserved.</p>
+  </footer>
+
+  <script>
+
+    let count = 0;
+    const target = 15000;
+    const timer  = setInterval(() => {
+      count += 300;
+      document.getElementById("counter").textContent = count.toLocaleString();
+      if (count >= target) {
+        document.getElementById("counter").textContent = target.toLocaleString();
+        clearInterval(timer);
+      }
+    }, 20);
+
+    function sendMessage() {
+      const name    = document.getElementById("name").value.trim();
+      const email   = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+      const msg     = document.getElementById("msg");
+      if (!name || !email || !message) {
+        msg.style.color = "#cc0000";
+        msg.textContent = "Please fill in all fields before sending.";
+        return;
+      }
+      msg.style.color = "#003399";
+      msg.textContent = `Thank you, ${name}! Your message has been sent.`;
+      document.getElementById("name").value    = "";
+      document.getElementById("email").value   = "";
+      document.getElementById("message").value = "";
+    }
+
+  </script>
+</body>
+</html>
